@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js" integrity="sha256-KDK3xm/GlUAv2dBVItuCM6jjCCtAVrjEfsdpcuMbN5M=" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js" integrity="sha256-a6uP+lfJTznPH4/eUqQFX3/sULwjHbfGtUjy8CWPooI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>The Weather Here</title>
+</head>
+<body>
+
+    <h1>The Weather Here</h1>
+
+    &nbsp;&nbsp;<a href="/">check in</a>
+    | <a href="/checkins">view checkins</a>
+
+    <p style="background-color: #EEE; margin: 10px; padding: 10px;">
+      latitude: <span id="latitude"></span>&deg;<br />
+      longitude: <span id="longitude"></span>&deg;
+    </p>
+
+    <div id="weatherPara" style="background-color: #EEE; margin: 10px; padding: 10px;">
+      <h4 style="margin-top: 0em; margin-bottom: 10px;">* Weather Data using <span><a href="https://darksky.net/dev/account">Dark Sky API</a></span></h4>
+      - the weather here is <span id="summary"></span>
+      with a temperature of <span id="temperature"></span> &deg; F.
+    </div>
+
+    <div id="tempPara" style="background-color: #EEE; margin: 10px; padding: 10px;">
+      <h4 style="margin-top: 0em; margin-bottom: 10px;">* Air Quality Data using <span"><a href="https://docs.openaq.org/#api-Latest">open AQ API</a></span></h4>
+      - The concentration of particulate matter (<span id="aq_parameter"></span>)
+      is <span id="aq_value"></span> <span id="aq_units"></span>.  <br> 
+      - last read on  <span id="aq_date"></span>
+    </div>
+      
+
+    <button id="submit">check in</button>
+
+    
+    <script src="sketch.js"> </script>
+
+
+</body>
+</html>
