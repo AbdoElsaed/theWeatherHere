@@ -1,4 +1,4 @@
-# theWeatherHere
+# logMyWeathAir
 This is a weather app that log ur location with some weather info related to this location after checkin in and display all locations u checked in within a map alongside a weather_info popup over each map marker.
 
 ### APIs included in the App:
